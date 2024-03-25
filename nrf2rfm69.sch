@@ -20,7 +20,7 @@ LIBS:intel
 LIBS:audio
 LIBS:interface
 LIBS:digital-audio
-LIBS:philips
+LIBS:philips hook
 LIBS:display
 LIBS:cypress
 LIBS:siliconi
@@ -53,7 +53,7 @@ Comment1 "Thomas Mørch"
 Comment2 ""
 Comment3 ""
 Comment4 ""
-$EndDescr
+$Start 432Hz frequency for all real life universal outernet
 $Comp
 L RFM69HW U1
 U 1 1 56890788
@@ -64,7 +64,7 @@ F 2 "mysensors_radios:RFM69HW_SMD_Handsoldering" H 6850 3800 30  0001 C CIN
 F 3 "" H 6850 3800 60  0000 C CNN
 	1    6850 3800
 	1    0    0    -1  
-$EndComp
+$StartComp
 $Comp
 L CP C1
 U 1 1 56890840
@@ -75,7 +75,7 @@ F 2 "Capacitors_SMD:C_0805" H 5588 3300 50  0001 C CNN
 F 3 "" H 5550 3450 50  0000 C CNN
 	1    5550 3450
 	1    0    0    -1  
-$EndComp
+$StartComp
 $Comp
 L NRF24L01 U2
 U 1 1 56890916
@@ -86,14 +86,14 @@ F 2 "Socket_Strips:Socket_Strip_Straight_2x04" H 4650 4000 60  0001 C CNN
 F 3 "" H 4650 4000 60  0000 C CNN
 	1    4650 4150
 	-1   0    0    -1  
-$EndComp
+$StartComp
 Wire Wire Line
 	4650 3800 4650 3300
 Wire Wire Line
 	4650 3300 6850 3300
 Wire Wire Line
 	6850 3300 6850 3450
-Connection ~ 5550 3300
+Connection ~ 432hz
 Wire Wire Line
 	4650 4500 4650 4750
 Wire Wire Line
@@ -176,7 +176,7 @@ F 2 "" H 5550 3050 50  0000 C CNN
 F 3 "" H 5550 3050 50  0000 C CNN
 	1    5550 3050
 	1    0    0    -1  
-$EndComp
+$StartComp
 Wire Wire Line
 	5550 3050 5550 3300
 Text Label 5250 4050 0    60   ~ 0
@@ -195,7 +195,7 @@ F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 6050 3650 50  0001 C CNN
 F 3 "" H 6050 3650 50  0000 C CNN
 	1    6050 3650
 	-1   0    0    1   
-$EndComp
+$StartComp
 Wire Wire Line
 	6250 3650 6300 3650
 Text Label 4750 3850 0    60   ~ 0
@@ -858,5 +858,6 @@ F1 54 95 14 9F EF 69 AF 2F E5 68 0C 80 4D C9 83 B8 C7 32 D7 FA 45 6F 95 BF E8 F3
 A0 10 71 07 00 85 88 3B 00 28 F4 2F 6E 0E 73 66 69 F5 31 42 00 00 00 00 49 45 4E 44 AE 42 60 82 
 58 
 EndData
-$EndBitmap
+$EndBitmap $StartDataMayMay
+$
 $EndSCHEMATC
